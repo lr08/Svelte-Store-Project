@@ -11,7 +11,6 @@
     try {
       const response = await fetch("http://localhost:3000/emp");
       const data = await response.json();
-      // console.log(data); // Check the structure of the response
       emp = Array.isArray(data) ? data : [];
     } catch (error) {
       console.error("Error:", error);
